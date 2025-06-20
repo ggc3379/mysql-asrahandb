@@ -50,18 +50,16 @@ data class Ranker(
     @Column(nullable = false)
     val nickname: String,
 
-    @ManyToOne
-    @JoinColumn(name = "subclass_id", nullable = false)
-    val subclass: Subclass,
+    @Column(name = "subclass_id", nullable = false)
+    val subclassId: Int,
 
-    @ManyToOne
-    @JoinColumn(name = "weapon_id", nullable = false)
-    val weapon: Weapon,
+    @Column(name = "weapon_id", nullable = false)
+    val weaponId: Int,
 
-    @ManyToOne
-    @JoinColumn(name = "set_id", nullable = false)
-    val equipmentSet: EquipmentSet,
+    @Column(name = "set_id", nullable = false)
+    val setId: Int,
 
     @Column(nullable = false)
     val fame: Int
 )
+
