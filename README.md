@@ -1,5 +1,7 @@
+# 2025 데이터 베이스 TermProject
 
-'''mermaid
+```mermaid
+
 erDiagram
     Ranker }o--|| Subclass : "belongs to"
     Ranker }o--|| Weapon : "uses"
